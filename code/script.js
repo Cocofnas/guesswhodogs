@@ -334,7 +334,8 @@ const selectQuestion = () => {
 
 const checkQuestion = () => {
   const { category, value } = currentQuestion;
-  if (secret[category] !== undefined && secret[category].includes(value)) {
+
+  if (secret[category].includes(value)) {
     filterCharacters(true);
   } else {
     filterCharacters(false);
@@ -404,7 +405,6 @@ const filterCharacters = (keep) => {
 // If you confirm, this function is invoked
 const winOrLose = ['You got it! Congratulations!', 'Close, but still so far. Try again.'];
 
-// ... (your existing code)
 
 // If you confirm, this function is invoked
 const checkMyGuess = (personToCheck) => {

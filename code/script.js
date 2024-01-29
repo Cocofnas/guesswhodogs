@@ -13,197 +13,261 @@ const playAgain = document.getElementById('playAgain')
 // Array with all the characters, as objects
 const CHARACTERS = [
   {
-    name: 'Jabala',
-    img: 'images/jabala.svg',
-    hair: 'hidden',
-    eyes: 'hidden',
-    accessories: ['glasses', 'hat'],
-    other: []
+    name: 'Barksalot',
+    img: 'images/Barksalot.jpg',
+    color: 'golden',
+    Is: 'sitting',
+    Accessories: ['sweater'],
+    Other: ['good']
   },
   {
-    name: 'Jack',
-    img: 'images/jack.svg',
-    hair: 'hidden',
-    eyes: 'blue',
-    accessories: ['hat', 'eyepatch'],
-    other: []
+    name: 'Bobo',
+    img: 'images/Bobo.jpg',
+    color: 'black and white',
+    Is: 'running',
+    Accessories: ['ball'],
+    Other: ['puppy', 'good']
   },
   {
-    name: 'Jacques',
-    img: 'images/jacques.svg',
-    hair: 'grey',
-    eyes: 'blue',
-    accessories: ['hat'],
-    other: ['smoker']
+    name: 'Bonks',
+    img: 'images/Bonks.jpg',
+    color: 'black and white',
+    Is: [],
+    Accessories: ['ball'],
+    Other: ['good']
   },
   {
-    name: 'Jai',
-    img: 'images/jai.svg',
-    hair: 'black',
-    eyes: 'brown',
-    accessories: ['tie'],
-    other: []
+    name: 'Bouncy',
+    img: 'images/Bouncy.jpg',
+    color: 'golden and white',
+    Is: 'sitting',
+    Accessories: ['sweater', 'hat'],
+    Other: ['good']
   },
   {
-    name: 'Jake',
-    img: 'images/jake.svg',
-    hair: 'yellow',
-    eyes: 'green',
-    accessories: ['glasses'],
-    other: []
+    name: 'Champ',
+    img: 'images/Champ.jpg',
+    color: 'grey',
+    Is: 'sitting',
+    Accessories: ['sweater'],
+    Other: ['good']
+  },
+  {
+    name: 'Chelsea',
+    img: 'images/Chelsea.jpg',
+    color: 'brown and white',
+    Is: 'lying',
+    Accessories: [],
+    Other: ['good', 'puppy']
+  },
+  {
+    name: 'Chili',
+    img: 'images/Chili.jpg',
+    color: 'brown and white',
+    Is: 'sitting',
+    Accessories: [],
+    Other: ['puppy']
+  },
+  {
+    name: 'Coolio',
+    img: 'images/Coolio.jpg',
+    color: 'black and grey',
+    Is: 'sitting',
+    Accessories: ['sunglasses'],
+    Other: ['good']
+  },
+  {
+    name: 'Corey',
+    img: 'images/Corey.jpg',
+    color: 'white',
+    Is: 'running',
+    Accessories: [],
+    Other: ['good']
+  },
+  {
+    name: 'Fangs',
+    img: 'images/Fangs.jpg',
+    color: 'brown and white',
+    Is: 'lying',
+    Accessories: ['partyhat'],
+    Other: ['good']
+  },
+  {
+    name: 'Flora',
+    img: 'images/Flora.jpg',
+    color: 'golden',
+    Is: 'sitting',
+    Accessories: ['flower'],
+    Other: ['good', 'puppy']
+  },
+  {
+    name: 'Fluffster',
+    img: 'images/Fluffster.jpg',
+    color: 'golden and white',
+    Is: 'sitting',
+    Accessories: ['stuffed'],
+    Other: ['good']
+  },
+  {
+    name: 'Frenchie',
+    img: 'images/Frenchie.jpg',
+    color: 'black and white',
+    Is: 'running',
+    Accessories: ['frisbee'],
+    Other: []
+  },
+  {
+    name: 'Goldie',
+    img: 'images/Goldie.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
+  },
+  {
+    name: 'Gordo',
+    img: 'images/Gordo.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
+  },
+  {
+    name: 'Grizzly',
+    img: 'images/Grizzly.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
+  },
+  {
+    name: 'Happy',
+    img: 'images/Happy.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
+  },
+  {
+    name: 'Hipster',
+    img: 'images/Hipster.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
     name: 'James',
-    img: 'images/james.svg',
-    hair: 'brown',
-    eyes: 'green',
-    accessories: ['glasses'],
-    other: []
+    img: 'images/James.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
-    name: 'Jana',
-    img: 'images/jana.svg',
-    hair: 'black',
-    eyes: 'hidden',
-    accessories: ['glasses', 'necklace'],
-    other: []
+    name: 'Murphy',
+    img: 'images/Murphy.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
-    name: 'Jane',
-    img: 'images/jane.svg',
-    hair: 'yellow',
-    eyes: 'hidden',
-    accessories: ['glasses'],
-    other: []
+    name: 'Oscar',
+    img: 'images/Oscar.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
-    name: 'Jaqueline',
-    img: 'images/jaqueline.svg',
-    hair: 'orange',
-    eyes: 'green',
-    accessories: ['glasses', 'necklace'],
-    other: []
+    name: 'Panda',
+    img: 'images/Panda.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
-
+   
   {
-    name: 'Jazebelle',
-    img: 'images/jazebelle.svg',
-    hair: 'purple',
-    eyes: 'hidden',
-    accessories: ['glasses'],
-    other: ['smoker']
-  },
-  {
-    name: 'Jean',
-    img: 'images/jean.svg',
-    hair: 'brown',
-    eyes: 'blue',
-    accessories: ['glasses', 'hat'],
-    other: ['smoker']
+    name: 'Peach',
+    img: 'images/Peach.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
-    name: 'Jeane',
-    img: 'images/jeane.svg',
-    hair: 'brown',
-    eyes: 'green',
-    accessories: ['glasses'],
-    other: []
+    name: 'Pearl',
+    img: 'images/Pearl.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
-    name: 'Jed',
-    img: 'images/jed.svg',
-    hair: 'orange',
-    eyes: 'green',
-    accessories: ['glasses', 'hat'],
-    other: ['smoker']
+    name: 'Pugster',
+    img: 'images/Pugster.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
-    name: 'Jenni',
-    img: 'images/jenni.svg',
-    hair: 'white',
-    eyes: 'hidden',
-    accessories: ['hat'],
-    other: []
+    name: 'Sausage',
+    img: 'images/Sausage.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
-    name: 'Jeri',
-    img: 'images/jeri.svg',
-    hair: 'orange',
-    eyes: 'green',
-    accessories: ['glasses'],
-    other: []
+    name: 'Snow',
+    img: 'images/Snow.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
-    name: 'Jerry',
-    img: 'images/jerry.svg',
-    hair: 'hidden',
-    eyes: 'blue',
-    accessories: ['hat'],
-    other: []
+    name: 'Sparky',
+    img: 'images/Sparky.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
-    name: 'Jess',
-    img: 'images/jess.svg',
-    hair: 'black',
-    eyes: 'blue',
-    accessories: ['glasses'],
-    other: []
+    name: 'Spot',
+    img: 'images/Spot.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
-    name: 'Jocelyn',
-    img: 'images/jocelyn.svg',
-    hair: 'black',
-    eyes: 'brown',
-    accessories: ['glasses'],
-    other: []
+    name: 'Stewart',
+    img: 'images/Stewart.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
-    name: 'Jon',
-    img: 'images/jon.svg',
-    hair: 'brown',
-    eyes: 'green',
-    accessories: ['glasses'],
-    other: []
+    name: 'Sweets',
+    img: 'images/Sweets.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
   {
-    name: 'Jordan',
-    img: 'images/jordan.svg',
-    hair: 'yellow',
-    eyes: 'hidden',
-    accessories: ['glasses', 'hat', 'necklace'],
-    other: []
-  },
-  {
-    name: 'Josephine',
-    img: 'images/josephine.svg',
-    hair: 'grey',
-    eyes: 'brown',
-    accessories: [],
-    other: []
-  },
-  {
-    name: 'Josh',
-    img: 'images/josh.svg',
-    hair: 'yellow',
-    eyes: 'green',
-    accessories: [],
-    other: []
-  },
-  {
-    name: 'Jude',
-    img: 'images/jude.svg',
-    hair: 'black',
-    eyes: 'green',
-    accessories: ['tie'],
-    other: []
-  },
-  {
-    name: 'Julie',
-    img: 'images/julie.svg',
-    hair: 'black',
-    eyes: 'brown',
-    accessories: ['glasses', 'hat'],
-    other: []
+    name: 'Tonks',
+    img: 'images/Tonks.jpg',
+    color: 'hidden',
+    Is: 'hidden',
+    Accessories: ['glasses', 'hat'],
+    Other: []
   },
 ]
 

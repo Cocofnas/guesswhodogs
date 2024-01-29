@@ -69,8 +69,8 @@ select {
 
 /****** CARD ******/
 .card {
-  width: 135px;
-  height: 165px;
+  width: 200px;
+  height: 300px;
   overflow: hidden;
   border: 3px solid var(--secondary);
   border-radius: 4px;

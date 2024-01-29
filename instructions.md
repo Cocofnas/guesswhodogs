@@ -52,7 +52,7 @@ When we've figured this out, we should call `filterCharacters` function with pro
 For example, if we're asking: "Does the person have yellow hair" and the person stored in the secret has yellow hair, we want to call `filterCharacters(true)`.
 
 ## Step 5 - Giving the player some feedback and filter the board
-So, in the `filterCharacters` function we first want to make sure to give the player some feedback on what's happening. We can do this with a built-in JavaScript method `alert()`. We want the text in the alert to be slightly different depending on if the question is about accessories, other or the color of hair or eyes. So the first step could be to check what category the question is in.
+So, in the `filterCharacters` function we first want to make sure to give the player some feedback on what's happening. We can do this with a built-in JavaScript method `alert()`. We want the text in the alert to be slightly different depending on if the question is about accessories, other or the Color of hair or eyes. So the first step could be to check what category the question is in.
 
 Then we also want to know If the text should say *Yes, the person smokes* or *No, the person doesn't smoke*, for example. This we will check with the `keep` parameter passed in to the function.
 

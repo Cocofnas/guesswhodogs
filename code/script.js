@@ -15,7 +15,7 @@ const CHARACTERS = [
   {
     name: 'Barksalot',
     img: 'images/Barksalot.jpg',
-    color: 'golden',
+    Color: 'golden',
     Is: 'sitting',
     Accessories: ['sweater'],
     Other: ['good']
@@ -23,7 +23,7 @@ const CHARACTERS = [
   {
     name: 'Bobo',
     img: 'images/Bobo.jpg',
-    color: 'black and white',
+    Color: 'black and white',
     Is: 'running',
     Accessories: ['ball'],
     Other: ['puppy', 'good']
@@ -31,7 +31,7 @@ const CHARACTERS = [
   {
     name: 'Bonks',
     img: 'images/Bonks.jpg',
-    color: 'black and white',
+    Color: 'black and white',
     Is: [],
     Accessories: ['ball'],
     Other: ['good']
@@ -39,7 +39,7 @@ const CHARACTERS = [
   {
     name: 'Bouncy',
     img: 'images/Bouncy.jpg',
-    color: 'golden and white',
+    Color: 'golden and white',
     Is: 'sitting',
     Accessories: ['sweater', 'hat'],
     Other: ['good']
@@ -47,7 +47,7 @@ const CHARACTERS = [
   {
     name: 'Champ',
     img: 'images/Champ.jpg',
-    color: 'grey',
+    Color: 'grey',
     Is: 'sitting',
     Accessories: ['sweater'],
     Other: ['good']
@@ -55,7 +55,7 @@ const CHARACTERS = [
   {
     name: 'Chelsea',
     img: 'images/Chelsea.jpg',
-    color: 'brown and white',
+    Color: 'brown and white',
     Is: 'lying',
     Accessories: [],
     Other: ['good', 'puppy']
@@ -63,7 +63,7 @@ const CHARACTERS = [
   {
     name: 'Chili',
     img: 'images/Chili.jpg',
-    color: 'brown and white',
+    Color: 'brown and white',
     Is: 'sitting',
     Accessories: [],
     Other: ['puppy']
@@ -71,7 +71,7 @@ const CHARACTERS = [
   {
     name: 'Coolio',
     img: 'images/Coolio.jpg',
-    color: 'black and grey',
+    Color: 'black and grey',
     Is: 'sitting',
     Accessories: ['sunglasses'],
     Other: ['good']
@@ -79,7 +79,7 @@ const CHARACTERS = [
   {
     name: 'Corey',
     img: 'images/Corey.jpg',
-    color: 'white',
+    Color: 'white',
     Is: 'running',
     Accessories: [],
     Other: ['good']
@@ -87,7 +87,7 @@ const CHARACTERS = [
   {
     name: 'Fangs',
     img: 'images/Fangs.jpg',
-    color: 'brown and white',
+    Color: 'brown and white',
     Is: 'lying',
     Accessories: ['partyhat'],
     Other: ['good']
@@ -95,7 +95,7 @@ const CHARACTERS = [
   {
     name: 'Flora',
     img: 'images/Flora.jpg',
-    color: 'golden',
+    Color: 'golden',
     Is: 'sitting',
     Accessories: ['flower'],
     Other: ['good', 'puppy']
@@ -103,7 +103,7 @@ const CHARACTERS = [
   {
     name: 'Fluffster',
     img: 'images/Fluffster.jpg',
-    color: 'golden and white',
+    Color: 'golden and white',
     Is: 'sitting',
     Accessories: ['stuffed'],
     Other: ['good']
@@ -111,163 +111,163 @@ const CHARACTERS = [
   {
     name: 'Frenchie',
     img: 'images/Frenchie.jpg',
-    color: 'black and white',
+    Color: 'black and white',
     Is: 'running',
     Accessories: ['frisbee'],
-    Other: []
+    Other: ['good']
   },
   {
     name: 'Goldie',
     img: 'images/Goldie.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'golden',
+    Is: 'lying',
+    Accessories: [],
+    Other: ['good']
   },
   {
     name: 'Gordo',
     img: 'images/Gordo.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'golden',
+    Is: 'sitting',
+    Accessories: ['glasses'],
+    Other: ['good']
   },
   {
     name: 'Grizzly',
     img: 'images/Grizzly.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'white',
+    Is: 'sitting',
+    Accessories: ['partyhat'],
+    Other: ['good']
   },
   {
     name: 'Happy',
     img: 'images/Happy.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'golden',
+    Is: 'sitting',
+    Accessories: ['partyhat'],
+    Other: ['good']
   },
   {
     name: 'Hipster',
     img: 'images/Hipster.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'black',
+    Is: 'sitting',
+    Accessories: ['hat'],
+    Other: ['good']
   },
   {
     name: 'James',
     img: 'images/James.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'golden',
+    Is: 'lying',
+    Accessories: ['sunglasses'],
+    Other: ['good']
   },
   {
     name: 'Murphy',
     img: 'images/Murphy.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'golden',
+    Is: 'sitting',
+    Accessories: [],
+    Other: ['good', 'puppy']
   },
   {
     name: 'Oscar',
     img: 'images/Oscar.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'golden',
+    Is: 'running',
+    Accessories: [],
+    Other: ['good']
   },
   {
     name: 'Panda',
     img: 'images/Panda.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'golden',
+    Is: [],
+    Accessories: ['stick'],
+    Other: ['good']
   },
    
   {
     name: 'Peach',
     img: 'images/Peach.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'white',
+    Is: 'sitting',
+    Accessories: ['partyhat'],
+    Other: ['good']
   },
   {
     name: 'Pearl',
     img: 'images/Pearl.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'golden',
+    Is: 'sitting',
+    Accessories: ['flower'],
+    Other: ['good']
   },
   {
     name: 'Pugster',
     img: 'images/Pugster.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'black and white',
+    Is: 'sitting',
+    Accessories: ['glasses'],
+    Other: ['good']
   },
   {
     name: 'Sausage',
     img: 'images/Sausage.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'black and brown',
+    Is: [],
+    Accessories: ['sunglasses'],
+    Other: ['good']
   },
   {
     name: 'Snow',
     img: 'images/Snow.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'white',
+    Is: 'sitting',
+    Accessories: ['confetti'],
+    Other: ['good']
   },
   {
     name: 'Sparky',
     img: 'images/Sparky.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'black and brown',
+    Is: 'lying',
+    Accessories: ['stuffed'],
+    Other: ['good']
   },
   {
     name: 'Spot',
     img: 'images/Spot.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'black and white',
+    Is: 'lying',
+    Accessories: ['stuffed'],
+    Other: ['good']
   },
   {
     name: 'Stewart',
     img: 'images/Stewart.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'golden',
+    Is: 'sitting',
+    Accessories: ['ball'],
+    Other: ['good']
   },
   {
     name: 'Sweets',
     img: 'images/Sweets.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'golden',
+    Is: 'running',
+    Accessories: [],
+    Other: ['good', 'puppy']
   },
   {
     name: 'Tonks',
     img: 'images/Tonks.jpg',
-    color: 'hidden',
-    Is: 'hidden',
-    Accessories: ['glasses', 'hat'],
-    Other: []
+    Color: 'grey',
+    Is: 'sitting',
+    Accessories: ['sweater', 'necklace'],
+    Other: ['good']
   },
 ]
 
@@ -275,9 +275,6 @@ const CHARACTERS = [
 let secret;
 let currentQuestion;
 let charactersInPlay;
-let guessCounter = 0; // Guess counter
-let startTime; // Start time for the timer
-let playerName = ''; // Player n
 
 
 // Draw the game board
@@ -306,17 +303,15 @@ const setSecretPerson = () => {
 
 // This function to start (and restart) the game
 const start = () => {
-  guessCounter = 0; // Reset guess counter
-  startTime = Date.now(); // Start timer
-  playerName = prompt("Please enter your name:", "Enter name here"); // Get player name
   charactersInPlay = CHARACTERS;
-  board.innerHTML -= winOrLose[0] || winOrLose[1];
+  board.innerHTML = '';
   questions.selectedIndex = 0;
   setSecretPerson();
   currentQuestion = {};
   generateBoard();
   wOL.style.display = 'none';
-}
+};
+
 
 const restart = () => {
   charactersInPlay = CHARACTERS; 
@@ -339,8 +334,7 @@ const selectQuestion = () => {
 
 const checkQuestion = () => {
   const { category, value } = currentQuestion;
-
-  if (secret[category].includes(value)) {
+  if (secret[category] && Array.isArray(secret[category]) && secret[category].includes(value)) {
     filterCharacters(true);
   } else {
     filterCharacters(false);
@@ -351,37 +345,37 @@ const checkQuestion = () => {
 const filterCharacters = (keep) => {
   const { category, value } = currentQuestion;
  
-  if (category === 'accessories') {
+  if (category === 'Accessories') {
     if (keep) {
       charactersInPlay = charactersInPlay.filter((person) => person[category].includes(value));
-      alert(`Yes, the person wears ${value}! Keep all people that wear ${value}`);
+      alert(`Yes, the dog has  ${value}! Keep all people that has ${value}`);
     } else {
       charactersInPlay = charactersInPlay.filter((person) => !person[category].includes(value));
       alert(`No, the person doesn't wear ${value}! Remove all people that wear ${value}`);
     }
-  } else if (category === 'other') {
+  } else if (category === 'Other') {
     if (keep) {
       charactersInPlay = charactersInPlay.filter((person) => person[category].includes(value));
-      alert(`Yes, the person is a ${value}! Keep all people that is a ${value}`);
+      alert(`Yes, the dog is a ${value}! Keep all dogs that is are a${value}`);
     } else {
       charactersInPlay = charactersInPlay.filter((person) => !person[category].includes(value));
-      alert(`No, the person isn't a ${value}! Remove all people that is a ${value}`);
+      alert(`No, the dog isn't a ${value}! Remove all dogs that aren't a ${value}`);
     }
-  } else if (category === 'hair') {
+  } else if (category === 'Color') {
     if (keep) {
       charactersInPlay = charactersInPlay.filter((person) => person[category].includes(value));
-      alert(`Yes, person has ${value} hair! Keep all people that have ${value} hair`);
+      alert(`Yes, dog has ${value} fur! Keep all dogs that have ${value} fur`);
     } else {
       charactersInPlay = charactersInPlay.filter((person) => !person[category].includes(value));
-      alert(`No, the person doesn't have ${value} hair! Remove all the people with ${value} hair`);
+      alert(`No, the dog doesn't have ${value} fur! Remove all the people with ${value} fur`);
     }
-  } else if (category === 'eyes') {
+  } else if (category === 'Is') {
     if (keep) {
       charactersInPlay = charactersInPlay.filter((person) => person[category].includes(value));
-      alert(`Yes, the person has ${value} eyes! Keep all people that have ${value} eyes`);
+      alert(`Yes, the dog is ${value} eyes! Keep all dogs that are ${value}`);
     } else {
       charactersInPlay = charactersInPlay.filter((person) => !person[category].includes(value));
-      alert(`No, the person doesn't have ${value} eyes! Remove all the people with ${value} eyes`);
+      alert(`No, the dog isn't ${value}! Remove all dogs that are ${value}`);
     }
   }
 
@@ -400,7 +394,6 @@ const filterCharacters = (keep) => {
   // remember the confirm() ?
   // If the player wants to guess, invoke the checkMyGuess function.
   const Guess = (personToConfirm) => {
-    guessCounter++; // Increment guess counter
     const isCorrectGuess = personToConfirm === secret.name;
     if (confirm(`Do you want to guess on ${personToConfirm}?`)) {
       checkMyGuess(personToConfirm);
@@ -414,11 +407,6 @@ const winOrLose = ['You got it! Congratulations!', 'Close, but still so far. Try
 
 // If you confirm, this function is invoked
 const checkMyGuess = (personToCheck) => {
-  // 1. Check if the personToCheck is the same as the secret person's name
-  const endTime = Date.now(); // End time for the timer
-  const gameTime = (endTime - startTime) / 1000; // Calculate game time in seconds
-  alert(`${playerName}, your game time: ${gameTime} seconds, guesses: ${guessCounter}`);
-
   if (personToCheck === secret.name) {
     wOLtext.textContent = winOrLose[0];
   } else {
@@ -430,7 +418,6 @@ const checkMyGuess = (personToCheck) => {
     restart();
     return;
   }
-
 };
 
 // Invokes the start function when website is loaded
@@ -453,14 +440,9 @@ playAgain.addEventListener('click', () => {
   generateBoard();
 });
 
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  start()
-  });
-
 document.addEventListener('DOMContentLoaded', () => {
   generateBoard();
+  start();
 });
 
 questions.addEventListener('change', selectQuestion);

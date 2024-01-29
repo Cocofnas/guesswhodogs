@@ -334,12 +334,13 @@ const selectQuestion = () => {
 
 const checkQuestion = () => {
   const { category, value } = currentQuestion;
-  if (secret[category] && Array.isArray(secret[category]) && secret[category].includes(value)) {
+  if (secret[category] !== undefined && secret[category].includes(value)) {
     filterCharacters(true);
   } else {
     filterCharacters(false);
   }
 };
+
 
 
 const filterCharacters = (keep) => {

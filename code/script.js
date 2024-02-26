@@ -23,7 +23,7 @@ const CHARACTERS = [
   {
     name: 'Bobo',
     img: 'images/Bobo.jpg',
-    Color: 'black and white',
+    Color: 'blackandwhite',
     Is: 'running',
     Accessories: ['ball'],
     Other: ['puppy', 'good']
@@ -31,7 +31,7 @@ const CHARACTERS = [
   {
     name: 'Bonks',
     img: 'images/Bonks.jpg',
-    Color: 'black and white',
+    Color: 'blackandwhite',
     Is: [],
     Accessories: ['ball'],
     Other: ['good']
@@ -39,7 +39,7 @@ const CHARACTERS = [
   {
     name: 'Bouncy',
     img: 'images/Bouncy.jpg',
-    Color: 'golden and white',
+    Color: 'goldenandwhite',
     Is: 'sitting',
     Accessories: ['sweater', 'hat'],
     Other: ['good']
@@ -55,7 +55,7 @@ const CHARACTERS = [
   {
     name: 'Chelsea',
     img: 'images/Chelsea.jpg',
-    Color: 'brown and white',
+    Color: 'brownandwhite',
     Is: 'lying',
     Accessories: [],
     Other: ['good', 'puppy']
@@ -63,7 +63,7 @@ const CHARACTERS = [
   {
     name: 'Chili',
     img: 'images/Chili.jpg',
-    Color: 'brown and white',
+    Color: 'brownandwhite',
     Is: 'sitting',
     Accessories: [],
     Other: ['puppy']
@@ -71,7 +71,7 @@ const CHARACTERS = [
   {
     name: 'Coolio',
     img: 'images/Coolio.jpg',
-    Color: 'black and grey',
+    Color: 'blackandgrey',
     Is: 'sitting',
     Accessories: ['sunglasses'],
     Other: ['good']
@@ -87,7 +87,7 @@ const CHARACTERS = [
   {
     name: 'Fangs',
     img: 'images/Fangs.jpg',
-    Color: 'brown and white',
+    Color: 'brownandwhite',
     Is: 'lying',
     Accessories: ['partyhat'],
     Other: ['good']
@@ -103,7 +103,7 @@ const CHARACTERS = [
   {
     name: 'Fluffster',
     img: 'images/Fluffster.jpg',
-    Color: 'golden and white',
+    Color: 'goldenandwhite',
     Is: 'sitting',
     Accessories: ['stuffed'],
     Other: ['good']
@@ -111,7 +111,7 @@ const CHARACTERS = [
   {
     name: 'Frenchie',
     img: 'images/Frenchie.jpg',
-    Color: 'black and white',
+    Color: 'blackandwhite',
     Is: 'running',
     Accessories: ['frisbee'],
     Other: ['good']
@@ -208,7 +208,7 @@ const CHARACTERS = [
   {
     name: 'Pugster',
     img: 'images/Pugster.jpg',
-    Color: 'black and white',
+    Color: 'blackandwhite',
     Is: 'sitting',
     Accessories: ['glasses'],
     Other: ['good']
@@ -216,7 +216,7 @@ const CHARACTERS = [
   {
     name: 'Sausage',
     img: 'images/Sausage.jpg',
-    Color: 'black and brown',
+    Color: 'blackandbrown',
     Is: [],
     Accessories: ['sunglasses'],
     Other: ['good']
@@ -232,7 +232,7 @@ const CHARACTERS = [
   {
     name: 'Sparky',
     img: 'images/Sparky.jpg',
-    Color: 'black and brown',
+    Color: 'blackandbrown',
     Is: 'lying',
     Accessories: ['stuffed'],
     Other: ['good']
@@ -240,7 +240,7 @@ const CHARACTERS = [
   {
     name: 'Spot',
     img: 'images/Spot.jpg',
-    Color: 'black and white',
+    Color: 'blackandwhite',
     Is: 'lying',
     Accessories: ['stuffed'],
     Other: ['good']
@@ -273,7 +273,7 @@ const CHARACTERS = [
 
 // Global variables
 let secret;
-let currentQuestion;
+let currentQuestion = {};
 let charactersInPlay;
 
 
@@ -283,13 +283,13 @@ const generateBoard = () => {
   charactersInPlay.forEach((person) => {
     board.innerHTML += `
     <div class="card">
-      <p>${person.name}</p>
-      <img src=${person.img} alt=${person.name}>
-      <div class="guess">
-        <span>Guess on ${person.name}?</span>
-        <button class="filled-button small" onclick="Guess('${person.name}')">Guess</button>
-      </div>
+    <p>${person.name}</p>
+    <img src=${person.img} alt=${person.name}>
+    <div class="guess">
+      <span>Guess on ${person.name}?</span>
+      <button class="filled-button small" onclick="Guess('${person.name}')">Guess</button>
     </div>
+  </div>
   `;
 });
 };
@@ -321,9 +321,9 @@ const restart = () => {
 };
 
 // setting the currentQuestion object when you select something in the dropdown
-
 const selectQuestion = () => {
-  const category = questions.options[questions.selectedIndex].parentNode.label;
+  const selectedOption = questions.options[questions.selectedIndex];
+  const category = selectedOption.parentElement.label; // Get the label of the parent optgroup
   const value = questions.value;
 
   currentQuestion = {
@@ -332,15 +332,29 @@ const selectQuestion = () => {
   };
 };
 
-const checkQuestion = () => {
-  const { category, value } = currentQuestion;
 
-  if (secret[category].includes(value)) {
-    filterCharacters(true);
+
+console.log("questions.selectedIndex:", questions.selectedIndex);
+
+const checkQuestion = () => {
+  if (!secret) {
+    console.error("Secret is not properly set.");
+    return;
+  }
+
+  if (currentQuestion && currentQuestion.category && currentQuestion.value) {
+    const { category, value } = currentQuestion;
+    if (secret[category] && secret[category].includes(value)) {
+      filterCharacters(true);
+    } else {
+      filterCharacters(false);
+    }
   } else {
-    filterCharacters(false);
+    console.error("Current question is not properly set.");
   }
 };
+
+
 
 
 
@@ -350,10 +364,10 @@ const filterCharacters = (keep) => {
   if (category === 'Accessories') {
     if (keep) {
       charactersInPlay = charactersInPlay.filter((person) => person[category].includes(value));
-      alert(`Yes, the dog has  ${value}! Keep all people that has ${value}`);
+      alert(`Yes, the dog has  ${value}! Keep all dogs with a ${value}`);
     } else {
       charactersInPlay = charactersInPlay.filter((person) => !person[category].includes(value));
-      alert(`No, the person doesn't wear ${value}! Remove all people that wear ${value}`);
+      alert(`No, the dog doesn't wear ${value}! Remove all dogs with a${value}`);
     }
   } else if (category === 'Other') {
     if (keep) {
@@ -369,7 +383,7 @@ const filterCharacters = (keep) => {
       alert(`Yes, dog has ${value} fur! Keep all dogs that have ${value} fur`);
     } else {
       charactersInPlay = charactersInPlay.filter((person) => !person[category].includes(value));
-      alert(`No, the dog doesn't have ${value} fur! Remove all the people with ${value} fur`);
+      alert(`No, the dog doesn't have ${value} fur! Remove all the dogs with ${value} fur`);
     }
   } else if (category === 'Is') {
     if (keep) {

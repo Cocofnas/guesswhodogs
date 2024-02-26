@@ -303,14 +303,15 @@ const setSecretPerson = () => {
 
 // This function to start (and restart) the game
 const start = () => {
+  playerName = prompt("Please enter your name:", "Enter name here"); // Get player name
   charactersInPlay = CHARACTERS;
-  board.innerHTML = '';
+  board.innerHTML -= winOrLose[0] || winOrLose[1];
   questions.selectedIndex = 0;
   setSecretPerson();
   currentQuestion = {};
   generateBoard();
   wOL.style.display = 'none';
-};
+}
 
 
 const restart = () => {
